@@ -2,19 +2,31 @@
     {
         "title": "Introduction",
         "content": "Thanks for taking a look at my blog! Here I describe my experiences with the languages I'm learning, as well as describing the project I worked on. Feel free to check out the About Me page to learn more about me, how I made this website, as well as my contact information if you'd like to reach out!",
-        "link": "https://github.com/KJFreys1/blog-app",
+        "link": "https://github.com/KJFreys1",
         "linkDesc": "Github"
     },
     {
-        "title": "Blog Post 1",
-        "content": "This is the content of blog post number one",
-        "link": "https://github.com/KJFreys1/blog-app",
-        "linkDesc": "Github"
+        "title": "Simon",
+        "content": "For our first project, we were tasked with coding a game of our choosing from scratch using only vanilla JavaScript, HTML and CSS. I chose to recreate the classic memory game Simon. I was able to quickly recreate the game in its entirety, displaying a series of div elements that replicated an image of the handheld version of the game. The buttons showed a random sequence of flashes that indicated the pattern the user had to follow, and if the user pressed the correct buttons in the right order, it would repeat the sequence adding on one more at the end. The user would then guess again, and the process would continue until a wrong button was pressed, in which case the process would start over at one with a new random sequence. The game also recorded the user’s score and high score. I had a lot of fun creating the game, learning how to use setTimeout() to manually create animations.",
+        "link": "https://kjfreys1.github.io/Arcade/unit_one_proj/index.html",
+        "linkDesc": "Simon"
     },
     {
-        "title": "Blog Post 2",
-        "content": "This is the content of blog post number two",
-        "link": "https://github.com/KJFreys1/blog-app",
-        "linkDesc": "Github"
+        "title": "Snake",
+        "content": "After completing Simon, I had enough time in the week to recreate the age-old game Snake. Only using vanilla JavaScript, HTML, and CSS, I was able to code a grid system that kept track of a single square (the head of the snake) as it recursively moved in the direction that matched the user’s input. There was also an apple that showed up on a random square, and if the user directed the snake into the apple, the user’s score would increase and the length of the snake increased. If the snake moved into a wall or its own tail, the game would end, recording the ending score and giving the player the option to start over. I also added functions that prevented the apple from appearing on a square occupied by the snake as well as increased the speed of the snake as its length increased, incrementing the difficulty. This game was a lot more challenging to create than Simon was, but I learned a lot, specifically on creative ways to use arrays to keep track of what square(s) the snake and its tail currently occupied.",
+        "link": "https://kjfreys1.github.io/Arcade/snake/index.html",
+        "linkDesc": "Snake"
+    },
+    {
+        "title": "Bomberman",
+        "content": "For my last addition to my first project, I decided to recreate a game I used to play on the GameCube as a kid: Bomberman. Once again, this game was coded using only vanilla JavaScript, HTML, and CSS. In this game, the user is able to use their keyboard to move a white sprite around the board based on the same grid system I used in Snake. They can also use the Spacebar to place down bombs which exploded after a short animation. This explosion would sprout two squares in each direction, destroying any bricks and players that occupied that square. It did not, however, destroy stone, and if the explosion reached a stone, it would cut short and not go past it. There were also three other sprites that moved about the board and placed bombs down randomly, which the user had to trap and kill with their own bombs to win the game. The hardest part about this was coming up with the several functions that gave the other sprites enough AI to not kill themselves with their own bombs. However, by further familiarizing myself with classes, I was able to accomplish this task within the time limit given to me for this project.",
+        "link": "https://kjfreys1.github.io/Arcade/bomberman-game.html",
+        "linkDesc": "Bomberman"
+    },
+    {
+        "title": "Solitaire",
+        "content": "For our second project, we were tasked with developing an app using React. With the help of a 3rd party API, DeckOfCardsAPI, I was able to recreate the classic table-top card game Solitaire. The game has full functionality, from moving card(s) on top of another card that is the opposite colored suit and one value higher, to moving cards into a stack corresponding to suit and incremental value (Ace to King), to cycling through a deck on the side three cards at a time and moving cards from that deck to the board or the previously mentioned stacks. While the functionality was fairly easy to create from scratch, the styling was very challenging to me. This allowed to understand my weaknesses and I plan on focusing my attention on improving upon my skills with CSS for my next project.",
+        "link": "https://thirsty-tereshkova-fcfa2a.netlify.com/",
+        "linkDesc": "Solitaire"
     }
 ]
