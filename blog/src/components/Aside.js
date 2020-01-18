@@ -5,7 +5,7 @@ export default class Aside extends React.Component {
     render() {
         const posts = this.props.data.map(arr => {
             return (
-                <Link to={'/blog/' + arr.title} className='link'>
+                <Link to={'/blog/' + arr.title} className='link link-aside'>
                     <div>{arr.title}</div>
                 </Link>
             )

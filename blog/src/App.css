@@ -1,12 +1,14 @@
 body {
   background-color: #D7BEA8;
-  color: #744253;
+  color: #442832;
 }
+
 .link-container {
   text-align: right;
 }
 
 header {
+  outline: 2px solid #744253;
   background-color: #B49286;
   width: 100%;
   height: 110px;
@@ -29,6 +31,7 @@ aside {
   height: 600px;
   padding: 10px 20px;
   margin-right: 20px;
+  outline: 2px solid #744253;
 }
 
 .aside-content {
@@ -37,10 +40,10 @@ aside {
 }
 
 .content-container {
-  background-color: #B49286;
   width: 75%;
   padding: 10px 40px;
   display: block;
+  outline: 2px solid #744253
 }
 
 main {
@@ -52,5 +55,12 @@ main {
 .link, a {
   text-decoration: none;
   color: #F3D9DC;
-  margin-top: 20px;
+}
+
+.link-aside {
+  line-height: 40px;
+}
+
+a {
+  color: #744253
 }
