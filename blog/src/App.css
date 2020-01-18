@@ -1,30 +1,56 @@
+body {
+  background-color: #D7BEA8;
+  color: #744253;
+}
 .link-container {
   text-align: right;
 }
 
 header {
-  background-color: rgb(255, 205, 205);
-  top: 0;
-  left: 0;
-  position: fixed;
+  background-color: #B49286;
   width: 100%;
+  height: 110px;
+}
+
+header > h1 {
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+.header-link {
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 0;
 }
 
 aside {
-  background-color: rgb(208, 255, 208);
-  width: 30%;
+  background-color: #B49286;
+  width: 25%;
   height: 600px;
   padding: 10px 20px;
+  margin-right: 20px;
+}
+
+.aside-content {
+  text-align: right;
+  font-size: 20px;
 }
 
 .content-container {
-  background-color: rgb(200, 200, 255);
-  width: 70%;
+  background-color: #B49286;
+  width: 75%;
   padding: 10px 40px;
+  display: block;
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 20px;
   display: inline-flex;
   width: 100%;
+}
+
+.link, a {
+  text-decoration: none;
+  color: #F3D9DC;
+  margin-top: 20px;
 }

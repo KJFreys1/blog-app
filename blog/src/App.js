@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './components/Header'
 import Aside from './components/Aside'
-import Blog from './components/Blog'
 import About from './components/About'
+import Post from './components/Post'
 import data from './data/data.json'
-import {Route} from 'react-router-dom'
+import {Route, Redirect} from 'react-router-dom'
 import './App.css';
 
 function App() {
@@ -12,10 +12,13 @@ function App() {
     <>
       <Header />
       <main>
-        <Aside />
+        <Aside data={data}/>
         <div className='content-container'>
-          <Route path='/' exact component={Blog} />
+          <Route path='/' exact>
+            <Redirect to='blog/Introduction' />
+          </Route>
           <Route path='/about' component={About} />
+          <Route path='/blog/:title' render={props => <Post {...props} data={data} /> } />
         </div>
       </main>
     </>

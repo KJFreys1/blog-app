@@ -6,8 +6,8 @@ export default function Header () {
         <header>
             <h1>Kyle's Blog</h1>
             <div className='link-container'>
-                <Link to='/'>Blog Posts</Link>
-                <Link to='/about'>About me</Link>
+                <Link to='/blog/Introduction' className='link header-link'>Blog Posts</Link>
+                <Link to='/about' className='link header-link'>About me</Link>
             </div>
         </header>
     )
